@@ -2,6 +2,8 @@
 
 Run a single Jupyter Lab instance, connected to multiple Python environments.
 
+⚠ **This is 100% vaporware. It's something I wish existed. Maybe I'll build it some day... want to help?** ⚠
+
 ```bash
 $ pipx install moons-of-jupyter
 

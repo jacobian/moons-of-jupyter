@@ -1,4 +1,7 @@
 import click
+import os
+import subprocess
+import sys
 
 
 @click.group()
@@ -10,7 +13,9 @@ def cli():
 @cli.command()
 def start():
     """Start Jupyter"""
-    print("✨ running on http://notreally/")
+    python = sys.executable
+    jupyter_lab = os.path.join(os.path.dirname(python), "jupyter-lab")
+    subprocess.Popen([jupyter_lab])
 
 
 @cli.command()
